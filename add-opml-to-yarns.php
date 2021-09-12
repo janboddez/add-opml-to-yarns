@@ -15,11 +15,15 @@
  * @package Yarns_Opml
  */
 
+namespace Yarns_OPML;
+
 // Prevent direct access.
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 
+require dirname( __FILE__ ) . '/includes/class-opml-parser.php';
+require dirname( __FILE__ ) . '/includes/class-import-handler.php';
 require dirname( __FILE__ ) . '/includes/class-yarns-opml.php';
 
 $yarns_opml = Yarns_Opml::get_instance();
